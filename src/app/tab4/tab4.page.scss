@@ -1,0 +1,35 @@
+ion-content{
+    --background: linear-gradient(180deg, #f64a69, #f66681);
+}
+
+.container{
+    position: absolute;
+    margin: 2em 1em;
+    width: 90%;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+.menucard{
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.imgMenu{
+    max-width: 110px;
+    border: solid 8px #ffffff;
+    border-radius: 20px;
+}
+
+.imgText{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.authorT{
+    margin-left: 10px;
+}

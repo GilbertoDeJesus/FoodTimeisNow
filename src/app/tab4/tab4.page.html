@@ -1,0 +1,17 @@
+<ion-content>
+  <div class="container">
+    <h1>Recetas guardadas</h1>
+    <ion-card class="menucard" *ngFor="let o of menuOp">
+      <ion-item>
+        <img [src]="o.url" class="imgMenu">
+        <p>
+          <ion-label class="imgText" >{{o.title}}</ion-label>
+          <ion-label class="authorT" color="medium">De: {{o.author}}</ion-label>
+          <br>
+          <ion-label class="authorT" color="medium">{{o.create}}</ion-label>
+        </p>
+        <ion-icon slot="end" name="bookmark" size="large" color="primary"></ion-icon>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>

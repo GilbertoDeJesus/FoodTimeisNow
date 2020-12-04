@@ -1,17 +1,21 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+<ion-header>
+  <ion-toolbar style="padding-top: 1em" mode="md">
+    <ion-searchbar mode="ios" placeholder="Buscar en FoodTime"> </ion-searchbar>
+    <ion-segment color="dark" mode="md" value="all">
+      <ion-segment-button value="all" (click)="newShow();">Nuevas</ion-segment-button>
+      <ion-segment-button value="favorites" (click)="newPop();">Populares</ion-segment-button>
+    </ion-segment>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div [ngSwitch]="news">
+    <div *ngSwitchCase="false">
+      <app-news></app-news>
+    </div>
+    <div *ngSwitchCase="true">
+      <app-popular></app-popular>
+    </div>
+    <div *ngSwitchDefault>output2</div>
+  </div>
 </ion-content>

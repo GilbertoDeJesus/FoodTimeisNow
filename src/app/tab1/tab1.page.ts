@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+  news:boolean=false;
   constructor() {}
+
+  newShow(){
+    this.news=false;
+  }
+  newPop() {
+    this.news = true;
+  }
 
 }

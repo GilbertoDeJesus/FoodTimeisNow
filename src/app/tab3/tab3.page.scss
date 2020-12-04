@@ -1,0 +1,43 @@
+ion-content {
+  display: flex;
+  align-items: center;
+  --background: linear-gradient(180deg, #56BE60, #56CF66);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.account {
+  margin: 0 auto;
+  background: linear-gradient(180deg,  #5ec2fe, #271f7e);
+  border-radius: 50% 50% 0 0;
+  padding: 1.4em 1.4em 0 1.4em;
+  width: 70%;
+}
+ion-img {
+  border-radius: 100%;
+  border: solid 5px #ffffff;
+}
+.imadiv {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.cheff{
+    margin-top: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+div.cheff ion-card{
+    margin-top: 0;
+    border-radius: 15px;
+    align-items: center;
+}
+
+div.cheff ion-card h3{
+    margin-top: 0;
+    text-align: center;
+}

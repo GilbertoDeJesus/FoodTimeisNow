@@ -1,0 +1,32 @@
+.container{
+    margin: 1em;
+}
+
+ion-card{
+    border-radius: 15px;
+    text-align: center;
+}
+
+ion-card ion-button.first{
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    left: 0.4em;
+    right: 0.4em;
+    text-transform: none;
+    font-size: 14px;
+    --border-radius: 30px;
+}
+
+ion-card ion-badge.badgeF{
+    font-weight: 500;
+    position: absolute;
+    top: 45px;
+    left: 0.5em;
+    right: 0.5em;
+    font-size: 16px;
+    --background: #00000075;
+    --color: #ffffff;
+    --padding-top: 5px;
+    --padding-bottom: 5px;
+}

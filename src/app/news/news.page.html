@@ -1,0 +1,54 @@
+<div class="container">
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let h of favorites">
+      <ion-card>
+        <ion-img [src]="h.url"></ion-img>
+        <ion-badge class="badgeF">{{h.title}}</ion-badge>
+        <ion-button color="light" class="first">Ver mas</ion-button>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</div>
+<div class="container">
+  <h3>Nuevos postres</h3>
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let h of desserts">
+      <ion-card>
+        <ion-img [src]="h.url"></ion-img>
+        <ion-badge class="badgeS">{{h.title}}</ion-badge>
+        <ion-item>
+
+          <ion-label class="stars" slot="start">
+            <ion-icon name="star-sharp" color="warning"></ion-icon>
+            <ion-icon name="star-sharp" color="warning"></ion-icon>
+            <ion-icon name="star-sharp" color="warning"></ion-icon>
+            <ion-icon name="star-sharp" color="warning"></ion-icon>
+            <ion-icon name="star-sharp" color="warning"></ion-icon>
+            {{h.likes}}
+          </ion-label>
+
+          <ion-button color="primary" slot="end" class="second">Ver mas</ion-button>
+        </ion-item>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</div>
+<div class="container">
+  <h2>Receta de la semana</h2>
+  <ion-item *ngFor="let w of week" class="fav">
+    <ion-img [src]="w.url"></ion-img>
+  </ion-item>
+  <ion-item class="fav">
+    <ion-label color="secondary">Arroz amarrillo</ion-label>
+  </ion-item>
+  <ion-item class="fav">
+    <ion-label>
+      <ion-icon name="star-sharp" color="warning"></ion-icon>
+      <ion-icon name="star-sharp" color="warning"></ion-icon>
+      <ion-icon name="star-sharp" color="warning"></ion-icon>
+      <ion-icon name="star-sharp" color="warning"></ion-icon>
+      <ion-icon name="star-sharp" color="warning"></ion-icon>
+      <br>200
+    </ion-label>
+  </ion-item>
+</div>

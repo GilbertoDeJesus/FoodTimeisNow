@@ -1,0 +1,13 @@
+<div class="container">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="6" *ngFor="let p of popular">
+        <ion-card>
+          <ion-img [src]="p.url"></ion-img>
+          <ion-badge class="badgeF">{{p.title}}</ion-badge>
+          <ion-button color="light" class="first">Ver mas</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

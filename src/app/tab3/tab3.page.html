@@ -1,17 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div class="account">
+    <div class="imadiv">
+      <ion-img src="../assets/images/account/account.jpg"></ion-img>
+    </div>
+  </div>
+  <div class="cheff">
+    <ion-card>
+      <h1>
+        <ion-icon name="ribbon" size="large" color="primary"></ion-icon>
+      </h1>
+      <h3>
+        <ion-label>
+          Cheff de la semana
+        </ion-label>
+      </h3>
+      <h1>
+        <ion-label color="secondary">Saida Coll</ion-label>
+      </h1>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>120 recetas</ion-label>
+          <ion-label>1800<ion-icon name="star-sharp" color="warning"></ion-icon>
+          </ion-label>
+          <ion-button color="tertiary" slot="end" size="small" mode="ios">Seguir</ion-button>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
