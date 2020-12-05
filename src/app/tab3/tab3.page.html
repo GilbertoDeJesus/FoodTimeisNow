@@ -1,30 +1,44 @@
 <ion-content [fullscreen]="true">
-  <div class="account">
-    <div class="imadiv">
-      <ion-img src="../assets/images/account/account.jpg"></ion-img>
+  <div>
+    <div class="account">
+      <div class="imadiv">
+        <ion-img src="../assets/images/pagethree/principal.jpg"></ion-img>
+      </div>
+    </div>
+    <div class="cheff">
+      <ion-card>
+        <h1>
+          <ion-icon name="ribbon" size="large" color="primary"></ion-icon>
+        </h1>
+        <h3>
+          <ion-label>
+            Cheff de la semana
+          </ion-label>
+        </h3>
+        <h1>
+          <ion-label color="secondary">Saida Coll</ion-label>
+        </h1>
+        <ion-card-content>
+          <ion-item>
+            <ion-label>120 recetas</ion-label>
+            <ion-label>1800<ion-icon name="star-sharp" color="warning"></ion-icon>
+            </ion-label>
+            <ion-button color="tertiary" slot="end" size="small" mode="ios">Seguir</ion-button>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
     </div>
   </div>
-  <div class="cheff">
-    <ion-card>
-      <h1>
-        <ion-icon name="ribbon" size="large" color="primary"></ion-icon>
-      </h1>
-      <h3>
-        <ion-label>
-          Cheff de la semana
-        </ion-label>
-      </h3>
-      <h1>
-        <ion-label color="secondary">Saida Coll</ion-label>
-      </h1>
-      <ion-card-content>
-        <ion-item>
-          <ion-label>120 recetas</ion-label>
-          <ion-label>1800<ion-icon name="star-sharp" color="warning"></ion-icon>
-          </ion-label>
-          <ion-button color="tertiary" slot="end" size="small" mode="ios">Seguir</ion-button>
-        </ion-item>
-      </ion-card-content>
-    </ion-card>
+  <div class="container">
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="4" *ngFor="let p of popular">
+          <ion-card>
+            <ion-img [src]="p.url"></ion-img>
+              <h6>{{p.title}}</h6>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>

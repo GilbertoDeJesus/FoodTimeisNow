@@ -54,20 +54,15 @@ ion-card ion-badge.badgeS{
     position: absolute;
     top: 35px;
     left: 0;
-    right: 3em;
+    right: auto;
     font-size: 20px;
+    padding-left: 0.5em;
+    padding-right: 1em;
+    text-align: left;
     --background: #ffffff;
     --color: #D8460F;
     --padding-top: 7px;
     --padding-bottom: 7px;
-}
-
-ion-label.stars{
-    font-size: 20px;
-}
-
-ion-item.favorite{
-    --border-radius: 100%;
 }
 
 .fav{

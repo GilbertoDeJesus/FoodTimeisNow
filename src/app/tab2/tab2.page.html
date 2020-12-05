@@ -4,7 +4,7 @@
     </div>
     <div class="container">
       <ion-card class="menucard" *ngFor="let o of menuOp">
-        <ion-item>
+        <ion-item routerLink="category">
           <img [src]="o.url" class="imgMenu">
           <ion-label class="imgText" color="secondary">{{o.title}}</ion-label>
           <ion-icon slot="end" name="chevron-forward-outline" size="large"></ion-icon>

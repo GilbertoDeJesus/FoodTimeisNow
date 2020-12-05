@@ -4,7 +4,7 @@
       <ion-card>
         <ion-img [src]="h.url"></ion-img>
         <ion-badge class="badgeF">{{h.title}}</ion-badge>
-        <ion-button color="light" class="first">Ver mas</ion-button>
+        <ion-button color="light" class="first" routerLink="food">Ver mas</ion-button>
       </ion-card>
     </ion-slide>
   </ion-slides>
@@ -27,7 +27,7 @@
             {{h.likes}}
           </ion-label>
 
-          <ion-button color="primary" slot="end" class="second">Ver mas</ion-button>
+          <ion-button color="primary" slot="end" class="second" routerLink="food">Ver mas</ion-button>
         </ion-item>
       </ion-card>
     </ion-slide>

@@ -6,6 +6,12 @@
     background: linear-gradient(180deg, #fc3e0d, #ea6b19);
 }
 
+
+@media (max-height: 720px) {
+  .father{
+        height: 110%;
+    }
+}
 @media (max-height: 640px) {
   .father{
         height: 120%;

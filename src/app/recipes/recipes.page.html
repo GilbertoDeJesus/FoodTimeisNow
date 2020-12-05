@@ -1,0 +1,42 @@
+<ion-content>
+  <div class="container">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="" color="light" size="large" icon="close"></ion-back-button>
+    </ion-buttons>
+  </div>
+  <div class="contains">
+      <h2>
+      <ion-label color="secondary">Postre de la semana</ion-label>
+    </h2>
+    <div class="imagen">
+      <ion-img [src]="week.url"></ion-img>
+    </div>
+    <h1>
+      <ion-label color="light">{{week.title}}</ion-label>
+    </h1>
+    <ion-button color="primary" expand="block" mode="ios" class="btRecipe" routerLink="food">Preparación</ion-button>
+  </div>
+  <div class="container">
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let h of desserts">
+      <ion-card>
+        <ion-img [src]="h.url"></ion-img>
+        <ion-badge class="badgeS">{{h.title}}</ion-badge>
+        <ion-item>
+
+          <ion-label class="stars" slot="start">
+            <ion-icon name="star-sharp" color="warning"></ion-icon>
+            <ion-icon name="star-sharp" color="warning"></ion-icon>
+            <ion-icon name="star-sharp" color="warning"></ion-icon>
+            <ion-icon name="star-sharp" color="warning"></ion-icon>
+            <ion-icon name="star-sharp" color="warning"></ion-icon>
+            {{h.likes}}
+          </ion-label>
+
+          <ion-button color="primary" slot="end" class="second" routerLink="food">Ver mas</ion-button>
+        </ion-item>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</div>
+</ion-content>

@@ -1,5 +1,7 @@
 {
   "name": "foodTime",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

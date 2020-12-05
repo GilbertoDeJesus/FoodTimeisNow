@@ -1,0 +1,32 @@
+<ion-content>
+  <div class="inicio">
+    <div class="fondo">
+      <div class="container">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="" color="light" size="large" icon="close"></ion-back-button>
+        </ion-buttons>
+      </div>
+      <div class="contains">
+        <h1>
+        <ion-label color="light" class="titleFood">Panque de nuez</ion-label>
+      </h1>
+      </div>
+      <div class="datos">
+        <ion-label color="light">Autor: {{recipe.autor}}</ion-label>
+        <br><ion-label color="light">Fecha: {{recipe.fecha}}</ion-label>
+        <br><ion-label color="light">T. preparación: {{recipe.tPrep}}</ion-label>
+        <br><ion-label color="light">T. de cocción: {{recipe.tCocc}}</ion-label>
+        <br><ion-label color="light">Tiempo total: {{recipe.tTota}}</ion-label>
+      </div>
+      <div class="ingredientes">
+        <h1><ion-label color="light">Ingredientes:</ion-label></h1>
+        <div *ngFor="let list of ingredients">
+          <ion-label color="light">{{list}}</ion-label>
+        </div>
+        <div class="preparacion">
+          <ion-button expand="block" color="secondary" mode="ios" (click)="presentToastWithOptions()">Preparación</ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
