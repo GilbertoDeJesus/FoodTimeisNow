@@ -1,7 +1,7 @@
 .father{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 115%;
     z-index: 999;
     background: linear-gradient(180deg, #fc3e0d, #ea6b19);
 }
@@ -15,6 +15,11 @@
 @media (max-height: 640px) {
   .father{
         height: 120%;
+    }
+}
+@media (max-height: 600px) {
+  .father{
+        height: 140%;
     }
 }
 .children{
